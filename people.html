@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NICKNAME:별명</title>
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="wow.min.js"></script>
+
+    <style type="text/css">
+                @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+        #eyehover{ opacity: 0 ; pointer-events: none;  }     
+        #eye:hover ~ #eyehover{ opacity: 1; transform: translateY(5%);  transition: 1s;} 
+
+
+    body,html,section,div,h1,h2,h3,p{margin:0; cursor:url(cursor3.cur),auto;}
+    section{width:1200px; background: black; margin: auto; height: 300px; display:flex; padding-top: 60px; padding-bottom: 50px;}
+    body{background: black;}
+    div{ text-align: center; }
+    div.left{ text-align: left; }
+    .pink{width: 100%; height: 130px; background: black; }
+    .black{width: 100%; height: 170px; background: #fa267c; }
+    .margin{margin-top:100px; margin-bottom: 150px;}
+    .fixed{position:fixed;}
+    .flex{display: flex;}
+
+    .row{ margin: auto; position: relative; }
+    .col-1{width: 100%}
+    .col-2{width: 66.66%}
+    .col-3{width: 50%}
+    .col-4{width: 300px;}
+
+    .white{background: white; height: 265px; margin: 20px;}
+    .blackb{background: black; height: 220px;  padding: 20px; } /*상자*/
+    .blackb:hover{background: #fa267c; height: 220px;  padding: 20px; transition:0.5s;}
+
+    .absolute{position: absolute; }
+    
+
+    .rotate3{ transform: rotate(25deg); }
+
+    .img{object-fit: cover; }
+    .img:hover{filter: brightness(60%);  transition: all ease 0.7s;}
+
+        #nick{position: absolute; z-index: 9;   cursor: pointer; width: 500px}
+        #how{position: absolute; z-index: 9;   cursor: pointer; width: 200px}
+        #prin{position: absolute; z-index: 9;   cursor: pointer; width: 250px}
+
+
+      
+
+        #title{position: absolute; z-index: 9;   width: 400px; }
+        #special{position: absolute; z-index: 9;   width: 240px;}
+
+        footer{width: 100%; height: 150px; background: #fa267c;    position:fixed; bottom:0; z-index: 1;}
+        #footer{position: absolute; z-index: 9;   width: 300px; }
+
+        
+
+
+/*햄버거*/
+input[id="menuicon"] {display:none; }
+input[id="menuicon"] + label {display:block;margin:55px;width:40px;height:30px;position:fixed;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#fff;transition:all .45s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} 
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:20;}
+input[id="menuicon"]:checked + label span {background:#000;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:350px;height:100%;background:#fa267c; position:fixed; top:0;left:-350px;z-index:10 ;transition:all .55s;} /*사이드바배경*/
+input[id="menuicon"]:checked + label + div {left:0;}
+
+
+h1{font-family: 'Noto Sans KR', sans-serif; font-size:2em; font-weight: 700; color:#fff; line-height: 65px; margin-top: 70px;} /*상자내부글씨*/
+h2{font-family: 'Noto Sans KR', sans-serif; font-size:1.4em; font-weight: 700; color:#fa267c; margin-top:120px; margin-left: 100px; line-height: 65px; }
+
+
+.row{margin:auto; justify-content: center;}
+        .h2{ text-decoration:none; color:#fff;}
+        .h23{ text-decoration:none; color:#fc8cba; font-size: 0.8em;}
+        .h22{ text-decoration:none; color:#fff;}
+        .h22:hover{opacity: 50%; transition: 0.3s;}
+
+        .color{color: #fa267c; }
+        .color:hover{margin-left:-50px; background: black; transition: 0.5s; color: black;} 
+        /*사이드바호버*/
+
+
+
+.refresh {position:fixed; right: 50px; bottom: 220px; z-index: 10;}
+.refresh:hover  {transform:rotate(40deg); transition: all 0.5s; filter: brightness(60%); }
+
+img.drag{z-index: 100;}
+
+
+    
+</style>
+
+</head>
+<body>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon" >
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+<div class="sidebar"><div>
+<h2>
+<div class="left"><a href="index.html" target="_self" class="h22"> NICKNAME:별명 </a> </div><br>
+<div class="color left"><a href="nickname.html" target="_self" class="h2"> 별명의형성 </a> </div>
+<div class="color left"><a href="https://youtu.be/h3B_Gd4XL_c" target="_blank" class="h23"> 찰나의실수 </a></div>
+<div class="color left"><a href="https://youtu.be/VSbgZ2sxQ7A" target="_blank" class="h23"> 2:홍진호2:홍진호 </a></div>
+<div class="color left"><a href="" target="_self" class="h2"> 사람들,별명들 </a></div>
+<div class="color left"><a href="random.html" target="_self" class="h2"> 별명생성기 </a></div></h2>
+</div>
+</div>
+<div class="pink"><img src="title2.png" id="title" class="animated fadeInDown"style="top:50px; left: calc(50% - 200px);"><img src="special2.png" id="special" class="animated fadeInDown"style="top:130px; left: calc(50% - 110px);"></div>
+
+
+<section>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">초딩</h1>
+            <img class="absolute drag" src="no1.png" style="width:450px;left:600px;" id="eyehover">
+            </div></div></div>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">공주&왕자</h1>
+            <img class="absolute drag" src="no2.png" style="width:450px;left:900px;" id="eyehover">
+            </div></div></div>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">장군</h1>
+            <img class="absolute drag" src="no3.png" style="width:450px;left:1200px;" id="eyehover">
+            </div></div></div>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">도라에몽</h1>
+            <img class="absolute drag" src="no4.png" style="width:450px;left:1500px;" id="eyehover">
+            </div></div></div>
+</section>
+
+
+<section>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">거북이</h1>
+            <img class="absolute drag animated shakeX" src="no5.png" style="width:450px;left:600px;" id="eyehover">
+            </div></div></div>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">감자</h1>
+            <img class="absolute drag" src="no6.png" style="width:450px;left:900px;" id="eyehover">
+            </div></div></div>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">아웃사이더</h1>
+            <img class="absolute drag" src="no7.png" style="width:450px;left:1200px;" id="eyehover">
+            </div></div></div>
+<div class="col-4 wow fadeIn"><div class="white"><div class="blackb"><h1 id="eye">조폭마누라</h1>
+            <img class="absolute drag" src="no8.png" style="width:450px;left:1500px;" id="eyehover">
+            </div></div></div>
+</section>
+
+
+
+</div>
+</div>
+
+    <div class="margin">
+    </div>
+
+  
+
+
+<img src="02nick.png" class="img rotate3 " id="nick" style="top:430px; left: 12%; pointer-events: none;">
+<img src="05prin.png" class="img " id="how" style="top:400px; left: 61%; ">
+<img src="05people2.png" class="img animated bounce slow infinite" id="prin" style="top:360px; left: 20%;">
+<img src="001.png" class="img animated bounce slow infinite" id="prin" style="top:740px; left: 73%;">
+
+<footer class="black">
+<div><img src="footer.png" id="footer" class="animated fadeInUp" style="top:40px; left: calc(50% - 150px);"></div></footer>
+
+
+
+</body>
+
+</html>

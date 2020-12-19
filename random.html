@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NICKNAME:별명</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="wow.min.js"></script>
+
+    <style type="text/css">
+                @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+    body,html,section,div,h1,h2,h3,p{margin:0; cursor:url(cursor.cur),auto;}
+    body{background: #fa267c;}
+    div{ text-align: center; }
+    div.left{ text-align: left; }
+    .pink{width: 100%; height: 130px; background: #fa267c; }
+    .black{width: 100%; height: 170px; background: black; }
+    .margin{margin-top:100px; margin-bottom: 150px;}
+    .fixed{position:fixed;}
+
+    input{}
+    #nick{width:600px; height: 100px; font-size: 2.5em; margin:auto; text-align: center; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; border:none; outline: none; margin:auto;}
+
+    #display{width:600px; height: 160px; background: white; font-size: 2.5em; margin:auto; font-family: 'Noto Sans KR', sans-serif; font-weight: 700;   padding: 160px 0; }
+
+    .rotate3{ transform: rotate(-30deg); }
+
+    .img{object-fit: cover; }
+    .img:hover{filter: brightness(60%); transform: scale(1.2,1.2); transition: all ease 0.7s;}
+
+        #heart{position: absolute; z-index: 9;   cursor: pointer; width: 200px }
+        #what{position: absolute; z-index: 9;   cursor: pointer; width: 300px; }
+        #twin2{position: absolute; z-index: 9;   cursor: pointer; width: 150px;}
+
+        button{ font-family: 'Noto Sans KR', sans-serif; font-size: 1.3em;  display:inline-block; background: black; width: 170px; height: 70px; margin:10px; margin-top: 30px; text-align: center; line-height: 70px; text-decoration: none;  color:#fa267c;  border: none; outline: none;}
+        button:hover {background: #b2b2b2; transition: all 0.5s; cursor: pointer;}
+
+        #title{position: absolute; z-index: 9;   width: 400px; }
+        #special{position: absolute; z-index: 9;   width: 220px; }
+
+        footer{width: 100%; height: 150px; background: black;    position:fixed; bottom:0; z-index: 1;}
+        #footer{position: absolute; z-index: 9;   width: 300px; }
+
+        
+
+
+/*햄버거*/
+input[id="menuicon"] {display:none; }
+input[id="menuicon"] + label {display:block;margin:55px;width:40px;height:30px;position:fixed;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#000;transition:all .45s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} 
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:20;}
+input[id="menuicon"]:checked + label span {background:#fff;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:350px;height:100%;background:#000; position:fixed; top:0;left:-350px;z-index:10 ;transition:all .55s;}
+input[id="menuicon"]:checked + label + div {left:0;}
+h1{font-family: 'Noto Sans KR', sans-serif; font-size:1.4em; font-weight: 700; color:#fff; margin-left: 100px; line-height: 65px; }
+h2{font-family: 'Noto Sans KR', sans-serif; font-size:1.4em; font-weight: 700; color:#fa267c; margin-top:120px; margin-left: 100px; line-height: 65px; }
+        .h2{ text-decoration:none; color:#fff;}
+        .h23{ text-decoration:none; color:#808080; font-size: 0.8em;}
+        .h22{ text-decoration:none; color:#fa267c;}
+        .h22:hover{opacity: 50%; transition: 0.3s;}
+
+        .color{color: #fa267c; }
+        .color:hover{margin-left:-50px; background: #b2b2b2; transition: 0.5s; color: #fa267c;}
+
+
+
+.refresh {position:fixed; right: 50px; bottom: 220px; z-index: 10;}
+.refresh:hover  {transform:rotate(40deg); transition: all 0.5s; filter: brightness(60%); }
+
+
+
+    
+</style>
+
+</head>
+<body>
+
+<input type="checkbox" id="menuicon">
+<label for="menuicon" >
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+<div class="sidebar"><div>
+<h2>
+<div class="left"><a href="index.html" target="_self" class="h22"> NICKNAME:별명 </a> </div><br>
+<div class="color left"><a href="nickname.html" target="_self" class="h2"> 별명의형성 </a> </div>
+<div class="color left"><a href="https://youtu.be/h3B_Gd4XL_c" target="_blank" class="h23"> 찰나의실수 </a></div>
+<div class="color left"><a href="https://youtu.be/VSbgZ2sxQ7A" target="_blank" class="h23"> 2:홍진호2:홍진호 </a></div>
+<div class="color left"><a href="people.html" target="_self" class="h2"> 사람들,별명들 </a></div>
+<div class="color left"><a href="random.html" target="_self" class="h2"> 별명생성기 </a></div></h2>
+</div>
+</div>
+<div class="pink"><img src="title.png" id="title" class="animated fadeInDown"style="top:50px; left: calc(50% - 200px);"><img src="special.png" id="special" class="animated fadeInDown"style="top:130px; left: calc(50% - 110px);"></div>
+
+    <div class="margin">
+    <input type="text"  id="nick" placeholder="이름을 입력하세요." ><br>
+    <button id="go">OK!</button>
+    <br> <br>
+    <div id="display"></div></div>
+
+    <a onClick="window.location.reload()" style="cursor: pointer;"><img src="refresh.png" class=
+        "refresh " width="50px;" >
+
+</a>
+
+<img src="06heart.png" class="img rotate3" id="heart" style="top:730px; left: 32%;">
+<img src="06what.png" class="img " id="what" style="top:880px; left: 33%;">
+<img src="003.png" class="img " id="twin2" style="top:360px; left: 61%;">
+
+<footer class="black">
+<div><img src="footer.png" id="footer" class="animated fadeInUp" style="top:40px; left: calc(50% - 150px);"></div></footer>
+
+</body>
+<script type="text/javascript">
+    go.onclick = function(){
+        var t = [ "z1존","공릉동불주먹","레이몬드","갓","엔젤","어둠의","불멸의","데이비드","봉인된","빛의 계승자&nbsp","죽음의 타락천사&nbsp","공릉동불도저","i최v강i","DarkFlameMaster","믿음소망사랑그리고","서울과학기술대학교를 <br>사랑하는&nbsp","Pinky","아름다운","cute"];
+        display.innerHTML += t[randomBH(0,18)]; 
+        display.innerHTML += nick.value;
+        display.innerHTML += "<br>"
+
+    }
+    function randomBH(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
+</html>
